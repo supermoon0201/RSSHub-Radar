@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - "*"
+  workflow_dispatch:
 
 env:
   WXT_UMAMI_ID: ${{ vars.WXT_UMAMI_ID || vars.PLASMO_PUBLIC_UMAMI_ID }}

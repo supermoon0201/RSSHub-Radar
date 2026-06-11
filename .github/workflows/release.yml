@@ -6,6 +6,9 @@ on:
       - "*"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 env:
   WXT_UMAMI_ID: ${{ vars.WXT_UMAMI_ID || vars.PLASMO_PUBLIC_UMAMI_ID }}
   WXT_UMAMI_URL: ${{ vars.WXT_UMAMI_URL || vars.PLASMO_PUBLIC_UMAMI_URL }}
